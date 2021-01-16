@@ -59,41 +59,7 @@
                For any of these projects you can download them using <code>git clone.</code> You can run them with their respective language: <code>python3</code> or <code>npm.</code>
                <ol>
                    <li><a href="https://github.com/LelandTLong/ACM_Project">ACM Teammate Finder</a></li>
-                      <li>Here's a snippet of a main component I worked on: </li>
-                       <pre>
-                       <code>
-const createOwnerEvent = (event) => {
-event.preventDefault();
-firebase.auth().onAuthStateChanged((user) => {
-    if (user) {
-        // A user is signed in.
-        console.log(user) 
-        const data = {
-            creator_id: user.uid,
-            description: description,
-            end_date: endDate,
-            max_applicants: maxApplicants,
-            status: true,
-            title: title,
-            type: type.toUpperCase()
-        }
-        const response = fetch(`/events/create/${user.uid}`, {
-            method: 'POST',
-            body: JSON.stringify(data),
-            headers: {'Content-Type': 'application/json'}
-        })
-        setOpenSubmitDialog(true);
-        return response.json;
-    } else {
-        // No user is signed in.
-        console.log('There is no logged in user');
-        history.push('/');
-    }
-});
-}
-                       </code>
-                        </pre>
-                   </ul>
+                    <li>Here's a snippet of a main component I worked on: </li>
                    <li><a href="https://github.com/jerukan/EnviroSense">EnviroSense</a></li>
                    <li><a href="https://github.com/ucsd-cse-spis-2019/project-tristin-caroline">PictureTranslate</a></li>
                 </ol>
