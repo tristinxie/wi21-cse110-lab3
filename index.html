@@ -13,7 +13,7 @@
   _______   _     _   _        __   ___      
  |__   __| (_)   | | (_)       \ \ / (_)     
     | |_ __ _ ___| |_ _ _ __    \ V / _  ___ 
-    | | '__| / __| __| | '_ \    > < | |/ _ \
+    | | '__| / __| __| | '_ \    &gt &lt | |/ _ \
     | | |  | \__ \ |_| | | | |  / . \| |  __/
     |_|_|  |_|___/\__|_|_| |_| /_/ \_\_|\___|
                                              
@@ -134,11 +134,71 @@ firebase.auth().onAuthStateChanged((user) => {
                     <svg viewBox="0 0 300 50" xmlns="http://www.w3.org/2000/svg" stroke="blue" fill="blue">
                         <rect height="50" width="50"/>
                     </svg>
+                    <table>
+                        <caption>Math is fun</caption>
+                            <colgroup>
+                                <col>
+                                <col span="2">
+                                <col span="2">
+                            </colgroup>
+                            <tr>
+                                <th>Fib(n)</th>
+                                <th>Number</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Fib(1)
+                                </td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Fib(2)
+                                </td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Fib(3)
+                                </td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Fib(4)
+                                </td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Fib(5)
+                                </td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Fib(6)
+                                </td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Fib(n)
+                                </td>
+                                <td>F(n-1) + F(n-2)</td>
+                            </tr>
+                    </table>
                 </section>
                 <hr>
                 <section>
                     <h3>Apply to Tristin LLC</h3>
                     <form>
+                        <label>First Name</label>
+                        <input>
+                        <br>
+                        <label>Last Name</label>
+                        <input>
+                        <br>
                         <label>Are you a UCSD student?</label>
                         <input type="checkbox">
 
@@ -155,6 +215,67 @@ firebase.auth().onAuthStateChanged((user) => {
                                 <option>MATH</option>
                             </optgroup>
                         </select>
+                        <label>Email</label>
+                        <input type="email">
+                        <br>
+                        <label>Favorite color</label>
+                        <input type="color">
+
+                        <br>
+                        <label>Resume</label>
+                        <input type="file">
+
+                        <br>
+                        <label>Favorite Number</label>
+                        <input type="number">
+
+                        <br>
+                        <label>How excited are you?</label>
+                        <input type="range">
+
+                        <br>
+                        <label>Date of Graduation</label>
+                        <input type="month">
+
+                        <fieldset>
+                            <legend>Select your gender</legend>
+                        
+                            <input type="radio" name="gender">
+                            <label>Male</label><br/>
+                        
+                            <input type="radio" name="gender">
+                            <label>Female</label><br/>
+                        
+                            <input type="radio" name="gender">
+                            <label>Other/Prefer not to say</label>
+                          </fieldset>
+                        <label for="story">Why do you want to be part of Tristin INC?</label>
+<br>
+                        <textarea id="why" name="why"
+                                rows="5" cols="33">
+                                Please no longer than 5 words
+                        </textarea>
+<br>
+                        <label for="Location">Choose a location:</label>
+                        <input list="locations" id="Locations" name="Locations" />
+                        <datalist id="locations">
+                            <option value="Los Angeles, California">
+                            <option value="San Diego, California">
+                            <option value="San Jose California">
+                        </datalist>
+
+                        <details>
+                            <summary>Terms and Conditions</summary>
+                            Nothing lol.
+                        </details> <label>Agree?</label><input type="checkbox">
+                        <br>
+                        <button
+                                type="button">
+                            Does nothing
+                        </button>
+                        <input type="reset">
+                        <input type="submit">
+                        <template id="status">Submitted!</template>
                 </section>
                 <hr>
                 <section>
