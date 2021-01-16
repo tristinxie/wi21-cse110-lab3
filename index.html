@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tristin Xie</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="./resources/Me.jpg">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to My Website</h1>
+            <h1>My name is </h1>
+            <pre>
+  _______   _     _   _        __   ___      
+ |__   __| (_)   | | (_)       \ \ / (_)     
+    | |_ __ _ ___| |_ _ _ __    \ V / _  ___ 
+    | | '__| / __| __| | '_ \    > < | |/ _ \
+    | | |  | \__ \ |_| | | | |  / . \| |  __/
+    |_|_|  |_|___/\__|_|_| |_| /_/ \_\_|\___|
+                                             
+                                             
+            </pre>
+            <h2>This site is still <span>under construction</span></h2>
+        </header>
+        <hr>
+        <nav>
+            <h3>Table of contents</h2>
+            <ul>
+                <li>Education</li>
+                <li>Short Bio</li>
+                <li>Projects</li>
+                <li>Fun Stuff</li>
+                <li>Contacts</li>
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <section>
+                <h1>Education</h1>
+                <p>Bachelor of Science in Computer Science at University of California San Diego</p>
+                <figure>
+                    <img src="resources/UCSD_Seal.png"
+                        alt="UC San Diego Seal">
+                    <figcaption>The official untransformed seal of UC San Diego. I do not own this image, UC San Diego does. <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">See license</a> </figcaption>
+                </figure>
+            </section>
+            <hr>
+            <section>
+                <h3>Short Bio</h3>
+                <div>
+                    <p>Hello! My name is Tristin Xie and I’m a <em>second year Computer Science student.</em> Currently I’m taking <b>CSE 101: Design and Analysis of Algorithms, 
+                    <br>CSE 110: Software Engineering, CSE 140: Components and Design Techniques for Digital Systems, CSE 140L: Digital Systems Laboratory.</b><br> 
+                    My favorite food is pizza noodles. I like to program in many programming languages, including <strong>C/C++, Java, JavaScript, Python, and more!</strong>
+                    </p>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <h3>Projects</h3>
+               For any of these projects you can download them using <code>git clone.</code> You can run them with their respective language: <code>python3</code> or <code>npm.</code>
+               <ol>
+                   <li><a href="https://github.com/LelandTLong/ACM_Project">ACM Teammate Finder</a></li>
+                   <ul>
+                       <li>Here's a snippet of a main component I worked on: </li>
+                       <pre>
+                       <code>
+const createOwnerEvent = (event) => {
+event.preventDefault();
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+        // A user is signed in.
+        console.log(user) 
+        const data = {
+            creator_id: user.uid,
+            description: description,
+            end_date: endDate,
+            max_applicants: maxApplicants,
+            status: true,
+            title: title,
+            type: type.toUpperCase()
+        }
+        const response = fetch(`/events/create/${user.uid}`, {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {'Content-Type': 'application/json'}
+        })
+        setOpenSubmitDialog(true);
+        return response.json;
+    } else {
+        // No user is signed in.
+        console.log('There is no logged in user');
+        history.push('/');
+    }
+});
+}
+                       </code>
+                        </pre>
+                   </ul>
+                   <li><a href="https://github.com/jerukan/EnviroSense">EnviroSense</a></li>
+                   <li><a href="https://github.com/ucsd-cse-spis-2019/project-tristin-caroline">PictureTranslate</a></li>
+                </ol>
+                </section>
+                <hr>
+                <section>
+                    <h3>Fun Stuff</h3>
+                    My favorite internet cat right now<br>
+                    <picture>
+                        <source srcset="resources/cat1.jfif"
+                                media="(min-width: 800px)">
+                        <img src="resources/cat2.jpg" alt="picture of cat"/>
+                        <aside>This cat photo changes on phone, wow!</aside>
+                    </picture> 
+                    <iframe
+                        title="Fun Data Structures"
+                        width="300"
+                        height="200"
+                        src="https://www.youtube.com/embed/rhpyqL5D7K0">
 
+                    </iframe>
+                    <p>I like to watch Data Structures videos by Professor Moshiri for fun.</p>
+
+                    <figure>
+                        <figcaption>Correct pronunciation of my name</figcaption>
+                        <audio
+                            controls
+                            src="/resources/name.m4a">
+                        </audio>
+                    </figure>
+                    <h3>Timelapse of Queen of the night blooming</h3>
+                    <video controls width="350">
+                        <source src="resources/timelapse.mp4"
+                                type="video/webm">
+                    </video>
+                    <h3>Is this a square or rectangle?</h3>
+                    <svg viewBox="0 0 300 50" xmlns="http://www.w3.org/2000/svg" stroke="blue" fill="blue">
+                        <rect height="50" width="50"/>
+                    </svg>
+                </section>
+                <hr>
+                <section>
+                    <h3>Apply to Tristin LLC</h3>
+                    <form>
+                        <label>Are you a UCSD student?</label>
+                        <input type="checkbox">
+
+                    </form><label for="dino-select">Choose a major or Department</label>
+                        <select id="dino-select">
+                            <optgroup label="Major">
+                                <option>Computer Science</option>
+                                <option>Computer Engineering</option>
+                                <option>Math-CS</option>
+                            </optgroup>
+                            <optgroup label="Department">
+                                <option>CSE</option>
+                                <option>ECE</option>
+                                <option>MATH</option>
+                            </optgroup>
+                        </select>
+                </section>
+                <hr>
+                <section>
+                    <h3>Contacts</h3>
+                <ol>
+                    <li>School Email: <a href="mailto:tyx001@ucsd.edu">tyx001@ucsd.edu</a></li>
+                    <ul>
+                        <li> Personal Email: <a href="mailto:tristinyxie@gmail.com">tristinyxie@gmail.com</a></li>
+                    </ul>
+                    <li>Github: <a href="https://www.github.com/tristinxie"><img
+                        src="/resources/GitHub-Mark-32px.png"
+                        alt="GitHub icon">tristinxie</a></li>
+                    <li>Linkedin: <a href="https://www.linkedin.com/in/tristin-xie-245918167/">Tristin Xie</a></li>
+                </ol>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <p>© 2021 Tristin Xie</p>
+        <aside>
+            All rights reserved
+        </aside>
+            <canvas width="50" height="50">Made with ♥ by Tristin Xie</canvas>
+        </footer>
+    </body>
+</html>
