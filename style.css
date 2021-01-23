@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap');
+html {
+    font-family: 'Roboto', 'sans-serif';
+}
+
 body {
     background-color: lightgray; /* makes background color into old and reputable looking website */
 }
@@ -29,7 +34,7 @@ h1 {
 }
 
 li.toc {
-    font: 2rem 'Arial', sans-serif;
+    font: 2rem 'Time New Roman', 'serif';
 }
 
 li.toc.important {
@@ -69,7 +74,7 @@ video:focus {
 }
 
 h1, h2, h3 {
-    font-family: sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 footer p {
