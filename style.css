@@ -89,3 +89,8 @@ label ~ input {
 li:first-of-type + li {
     font-size: medium;
 }
+
+#math {
+    text-decoration: orange wavy underline;
+    font-size: 30px;
+}
