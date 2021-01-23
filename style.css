@@ -12,12 +12,13 @@ h1 {
 }
 
 .ASCII {
-    border-width: 2px;
+    border-width: 1.5cm;
     border-color: #3b8003;
     border-style: dashed;
     border-radius: 50px;
     text-align: center;
     font-weight: 1000;
+    font-size: 0.5in;
 }
 
 li.toc {
@@ -37,6 +38,7 @@ li.toc.important {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 2vw;
 }
 
 #ucsdlogo {
@@ -55,7 +57,7 @@ pre:hover {
 }
 
 video:focus {
-    width: 1000px;
+    width: 150vh;
 }
 
 h1, h2, h3 {
@@ -68,7 +70,7 @@ footer p {
 
 nav > h3 {
     color: hsl(240, 100%, 50%);
-    font-size: 45px;
+    font-size: 3em;
 }
 
 label ~ input {
