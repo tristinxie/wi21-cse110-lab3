@@ -1,7 +1,7 @@
 ---
-name: CSS Fixes
+name: CSS New Feature
 about: Changes that need to be made on the website's CSS
-title: "[FIX] Styling changes"
+title: "[ADD] Styling changes"
 labels: css
 assignees: tristinxie
 
@@ -11,11 +11,11 @@ assignees: tristinxie
 
 **Last Name:**
 
-# Issue List
+# Issue Category
 - [ ] Issue 1
 - [ ] Issue 2
 - [ ] Add more as needed
 
-# Additional Details
+# [Optional] Additional Details
 
-# Link/Code location
+# [Optional] Link/Code location
