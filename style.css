@@ -12,7 +12,10 @@ h1 {
 }
 
 .ASCII {
-    border: 2px #3b8003 solid;
+    border-width: 2px;
+    border-color: #3b8003;
+    border-style: dashed;
+    border-radius: 50px;
     text-align: center;
     font-weight: 1000;
 }
