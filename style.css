@@ -82,6 +82,10 @@ h1, h2, h3 {
 footer p {
     font-size: small;
 }
+footer p::first-letter {
+    font-size: large;
+    color: darkblue;
+}
 
 nav > h3 {
     color: hsl(240, 100%, 50%);
@@ -91,6 +95,10 @@ nav > h3 {
 label ~ input {
     color: rgb(7, 216, 7);
     padding: 5px 5px 5px 15px;
+}
+
+input:active {
+    background-color: yellow;
 }
 
 li:first-of-type + li {
@@ -121,6 +129,8 @@ audio {
     bottom: 60px;
     left: 600px;
 }
+
+
 
 @media screen and (max-width: 600px){
     html {
