@@ -1,5 +1,5 @@
 body {
-    background-color: lightgray;
+    background-color: lightgray; /* makes background color into old and reputable looking website */
 }
   
 h1 {
@@ -24,7 +24,12 @@ li.toc {
 li.toc.important {
     font-weight: 1000;
 }
-
+/* 
+   U
+   C
+   S
+   D
+*/
 #education {
     display: flex;
     flex-direction: column;
