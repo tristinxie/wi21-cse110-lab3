@@ -5,10 +5,13 @@ body {
 h1 {
     color: hsla(120,100%,25%,0.8);
     margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 * {
-    margin: 5px;
+    margin: 5px 5px 5px 5px;
 }
 
 .ASCII {
@@ -19,6 +22,10 @@ h1 {
     text-align: center;
     font-weight: 1000;
     font-size: 0.5in;
+    padding-top: 60px;
+    padding-bottom: 1px;
+    padding-right: 20px;
+    padding-left: 5px;
 }
 
 li.toc {
@@ -43,8 +50,8 @@ li.toc.important {
 
 #ucsdlogo {
     text-align: center;
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
 }
 
 a[href *=".com"]{
@@ -58,6 +65,7 @@ pre:hover {
 
 video:focus {
     width: 150vh;
+    height: 85vh;
 }
 
 h1, h2, h3 {
@@ -75,6 +83,7 @@ nav > h3 {
 
 label ~ input {
     color: rgb(7, 216, 7);
+    padding: 5px 5px 5px 15px;
 }
 
 li:first-of-type + li {
