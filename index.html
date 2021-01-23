@@ -6,7 +6,7 @@
         <link rel="icon" href="./resources/Me.jpg">
         <link rel="stylesheet" href="style.css">
         <style>
-            h3 {
+            h5 {
                 color: darkblue 
             }
         </style>
@@ -15,7 +15,7 @@
         <header>
             <h1>Welcome to My Website</h1>
             <h1>My name is </h1>
-            <pre>
+            <pre class="ASCII">
   _______   _     _   _        __   ___      
  |__   __| (_)   | | (_)       \ \ / (_)     
     | |_ __ _ ___| |_ _ _ __    \ V / _  ___ 
@@ -31,21 +31,21 @@
         <nav>
             <h3>Table of contents</h3>
             <ul>
-                <li>Education</li>
-                <li>Short Bio</li>
-                <li>Projects</li>
-                <li>Fun Stuff</li>
-                <li>Contacts</li>
+                <li class="toc">Education</li>
+                <li class="toc">Short Bio</li>
+                <li class="toc important">Projects</li>
+                <li class="toc">Fun Stuff</li>
+                <li class="toc">Contacts</li>
             </ul>
         </nav>
         <hr>
         <main>
-            <section>
+            <section id="education">
                 <h1>Education</h1>
                 <p>Bachelor of Science in Computer Science at University of California San Diego</p>
                 <figure>
                     <img src="resources/UCSD_Seal.png"
-                        alt="UC San Diego Seal">
+                        alt="UC San Diego Seal" id="ucsdlogo">
                     <figcaption>The official untransformed seal of UC San Diego. I do not own this image, UC San Diego does. <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">See license</a> </figcaption>
                 </figure>
             </section>
@@ -66,7 +66,7 @@
                <ol>
                    <li><a href="https://github.com/LelandTLong/ACM_Project">ACM Teammate Finder</a></li>
                    Here's a snippet of a main component I worked on:
-                    <pre>
+                    <pre title="Mouse activated darkmode!">
                         <code>
 const createOwnerEvent = (event) => {
     event.preventDefault();

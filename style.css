@@ -6,3 +6,67 @@ h1 {
     color: darkgreen;
     margin-left: 10px;
 }
+
+* {
+    margin: 5px;
+}
+
+.ASCII {
+    border: 2px #3b8003 solid;
+    text-align: center;
+    font-weight: 1000;
+}
+
+li.toc {
+    font: 2rem 'Arial', sans-serif;
+}
+
+li.toc.important {
+    font-weight: 1000;
+}
+
+#education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ucsdlogo {
+    text-align: center;
+    display:block;
+    margin:auto;
+}
+
+a[href *=".com"]{
+    color: red;
+}
+
+pre:hover {
+    color: white;
+    background-color: black;
+}
+
+video:focus {
+    width: 1000px;
+}
+
+h1, h2, h3 {
+    font-family: sans-serif;
+}
+
+footer p {
+    font-size: small;
+}
+
+nav > h3 {
+    color: blue;
+    font-size: 45px;
+}
+
+label ~ input {
+    color: rgb(7, 216, 7);
+}
+
+li:first-of-type + li {
+    font-size: medium;
+}
