@@ -11,7 +11,7 @@ assignees: tristinxie
 
 **Last Name:**
 
-# Issue Category
+# Issue Tasks
 - [ ] Issue 1
 - [ ] Issue 2
 - [ ] Add more as needed
