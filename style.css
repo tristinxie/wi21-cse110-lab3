@@ -50,9 +50,17 @@ li.toc.important {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     font-size: 2vw;
 }
-
+#buttons {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+#buttons input {
+    flex-grow: 3;
+}
 #ucsdlogo {
     text-align: center;
     display: block;
