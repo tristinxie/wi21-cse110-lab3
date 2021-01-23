@@ -99,3 +99,11 @@ li:first-of-type + li {
     text-decoration: orange wavy underline;
     font-size: 30px;
 }
+
+picture:hover {
+    display: none;
+}
+
+#email {
+    display: inline-block; 
+}
