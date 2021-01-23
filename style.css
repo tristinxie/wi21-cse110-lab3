@@ -53,6 +53,16 @@ li.toc.important {
     justify-content: space-around;
     font-size: 2vw;
 }
+#fun {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    height: 150vh;
+}
+#fun > *{
+    align-self: center;
+    place-self: center;
+}
 #buttons {
     display: flex;
     align-items: stretch;
