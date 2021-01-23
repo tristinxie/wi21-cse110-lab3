@@ -103,7 +103,34 @@ li:first-of-type + li {
 picture:hover {
     display: none;
 }
-
+svg:hover {
+    min-width: 150%;
+}
+iframe{
+    width: 100%;
+    max-width: 40%;
+}
 #email {
     display: inline-block; 
+}
+
+@media screen and (max-width: 600px){
+    html {
+        color: magenta;
+        font-size: small;
+    }
+
+}
+@media screen and (max-width: 1300px){
+    .ASCII {
+        font-size: 3vh;
+    }
+}
+@media screen and (min-width: 1000px){
+    html {
+        font-size: large;
+    }
+    h1 {
+        text-align: center;
+    }
 }
